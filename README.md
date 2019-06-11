@@ -19,8 +19,9 @@ This script simply runs through all regions and destroys your default VPCs.
 
 ## Usage
 
-1. Get session token or configure aws cli profile
-2. `./vpc-monkey`
+1. Configure `_regions.sh` to select the regions in which to operate. 
+2. Get session token or configure aws cli profile
+3. `./vpc-monkey`
 
 ![VPC Monkey](vpc-monkey.png "VPC Monkey")
 
