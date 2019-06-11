@@ -21,11 +21,11 @@ set_shell_colours () {
 }
 set_shell_colours
 
-# HANDLE $1 ARGUMENTS
-if [ "$1" = "" ]
-	then echo "${RED}""Please specify profile name${NORMAL}"; exit 0
-fi
-. _setAWSenv.sh $1
+# # HANDLE $1 ARGUMENTS
+# if [ "$1" = "" ]
+# 	then echo "${RED}""Please specify profile name${NORMAL}"; exit 0
+# fi
+# . _setAWSenv.sh $1
 
 vpc_monkey (){
 	for R in $(aws ec2 describe-regions --query "Regions[].RegionName" --out text)
