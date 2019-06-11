@@ -15,12 +15,9 @@ This script simply runs through all regions and destroys your default VPCs.
 
 - `README.md` - this file
 - `vpc-monkey` - bash script to execute the VPC cleanup
-- `_setAWSenv.sh` - sets the AWS_DEFAULT_* AWS CLI variables
 
 ## Usage
 
-`./vpc-monkey [profile_name]`
-
-`[profile_name]` as per `~/.aws/config`, e.g.
+`./vpc-monkey`
 
 ![VPC Monkey](vpc-monkey.png "VPC Monkey")
