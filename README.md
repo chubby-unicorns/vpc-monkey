@@ -9,15 +9,22 @@ This script simply runs through all regions and destroys your default VPCs.
 ## Requirements
 
 - AWS CLI
-- Bash (tested only on Mac, but should work in Linux)
+- Bash
 
 ## Files
 
 - `README.md` - this file
 - `vpc-monkey` - bash script to execute the VPC cleanup
+- `_regions.sh` - select regions / use all
 
 ## Usage
 
-`./vpc-monkey`
+1. Get session token or configure aws cli profile
+2. `./vpc-monkey`
 
 ![VPC Monkey](vpc-monkey.png "VPC Monkey")
+
+## Known issues
+
+- can't handle security-groups and ENIs (e.g. orphaned, or attached to RDS) in VPCs and Subnets respectively
+- see [issues](https://github.com/Huevos-y-Bacon/vpc-monkey/issues)
